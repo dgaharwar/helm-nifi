@@ -94,7 +94,7 @@ properties:
   httpsPort: 8443
   webProxyHost: # <clusterIP>:<NodePort> (If Nifi service is NodePort or LoadBalancer)
   clusterPort: 6007
-  provenanceStorage: "8 GB"
+  provenanceStorage: "8 G"
   siteToSite:
     port: 10000
   # use properties.safetyValve to pass explicit 'key: value' pairs that overwrite other configuration
@@ -254,13 +254,13 @@ persistence:
     size: 100Mi
   # Storage capacity for the 'data' directory, which is used to hold things such as the flow.xml.gz, configuration, state, etc.
   dataStorage:
-    size: 1Gi
+    size: 1G
   # Storage capacity for the FlowFile repository
   flowfileRepoStorage:
-    size: 10Gi
+    size: 10G
   # Storage capacity for the Content repository
   contentRepoStorage:
-    size: 10Gi
+    size: 10G
   # Storage capacity for the Provenance repository. When changing this, one should also change the properties.provenanceStorage value above, also.
   provenanceRepoStorage:
     size: 10Gi
